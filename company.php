@@ -37,7 +37,7 @@ if ($contacts){ //if account eaxis
 	$conDat = array('AccountId' => $compID, 'Company' => $compName);
 	$conID = $app->updateCon($contactId, $conDat);
 	 
-}else{
+}else{//Add company to contact
 	$data = array('Company' => $company); 
 	$added = $app->dsAdd("Contact", $data);  
  	
@@ -45,7 +45,7 @@ if ($contacts){ //if account eaxis
 	$conData = $app->dsLoad("Contact", $added, $returnFields); 
 	// $company = $conData['FirstName'].$conData['LastName'];
 	$company = $_REQUEST['company'];
-	
+	//Update the contact
 	$conDat = array('AccountId' => $added, 'Company' => $company); 
 	$conID = $app->updateCon($added, $conDat); 
 	
