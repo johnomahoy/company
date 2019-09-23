@@ -1,13 +1,13 @@
 # Company
 
 
-This script will insert the data into a contact custom field for the AbandonCart task.
+This script will update the contact field for company.
 
 
 These are the expected data from the user:  api\
                                             key\
                                             contactId\
                                             company
-Develop by: Kurl
+Developed by: Kurl
 
 Check the script for more info.
